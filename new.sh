@@ -1,7 +1,5 @@
 #get highest tag number
 set -x
-git config --global user.name 'prathmeshrajmane'
-git config remote.origin.url https://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@github.com/prathmeshrajmane/semantic-versioning.git
 
 
 VERSION=`git describe --abbrev=0 --tags`
