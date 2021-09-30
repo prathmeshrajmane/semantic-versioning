@@ -44,12 +44,6 @@ NEEDS_TAG=`git describe --contains $GIT_COMMIT`
 #only tag if no tag already (would be better if the git describe command above could have a silent option)
 if [ -z "$NEEDS_TAG" ]; then
     echo "Tagged with $NEW_TAG (Ignoring fatal:cannot describe - this means commit is untagged) "
-git config --global user.name 'prathmeshrajmane'
-
-
-git config remote.origin.url https://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@github.com/prathmeshrajmane/semantic-versioning.git
-
-
     git tag $NEW_TAG
     git push --tags
 else
